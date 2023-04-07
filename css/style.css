@@ -8,12 +8,12 @@
     list-style: none;
     box-sizing: border-box;
 }
-
+/* //6c63ff */
 :root {
     --color-primary: #6c63ff;
     --color-success: #00bf8e;
     --color-warning: #f7c94b;
-    --color-danger-carient: rgba(247, 88, 66, 0.4);
+    --color-danger-carient: #F75842;
     --color-black: #000;
     --color-white: #fff;
     --color-bg: #1f2641;
@@ -106,9 +106,6 @@ img {
 }
 
 /* ================================= NAVBAR =================================== */
-
-
-
 nav {
     background: transparent;
     width: 100vw;
@@ -148,7 +145,7 @@ nav button {
 }
 
 .nav__menu a:hover {
-    color: var(--color-bg2);
+    color: var(--color-warning);
 }
 
 /* =================== Header ========================== */
@@ -178,7 +175,6 @@ header {
 .categories {
     background-color: var(--color-bg1);
     height: 32rem;
-
 }
 
 .categories h1 {
@@ -257,7 +253,7 @@ header {
 
 /* ========================= START COURSES ============================== */
 .couses {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .courses__container {
@@ -348,7 +344,6 @@ header {
 
 .testimonial {
     padding-top: 2rem;
-
 }
 
 .avatar {
@@ -362,7 +357,6 @@ header {
 
 .testimonial__info {
     text-align: center;
-
 }
 
 .testimonial__body {
@@ -374,15 +368,19 @@ header {
 }
 
 .testimonial__body::before {
+    overflow: hidden;
     content: '';
     display: block;
+    /* background: var(--color-primary); */
     background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
     height: 3rem;
     width: 3rem;
     position: absolute;
     left: 50%;
+    
+ 
     top: -1.5rem;
-    transform: rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
 }
 
 /* ========================= END TESTIMONIALS ============================== */
@@ -602,7 +600,7 @@ footer ul li a:hover {
      /* == ============ testimonials =========== */
 
      .testimonial__body{
-        padding: 1.2rem;
+        padding: 1.5rem;
      }
      /* =============== fotter ============== */
      .fotter__container{
